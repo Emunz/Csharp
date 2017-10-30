@@ -1,0 +1,8 @@
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\bin\Debug\netcoreapp1.1\collections_practice.deps.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\bin\Debug\netcoreapp1.1\collections_practice.runtimeconfig.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\bin\Debug\netcoreapp1.1\collections_practice.runtimeconfig.dev.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\obj\Debug\netcoreapp1.1\collections_practice.AssemblyInfo.cs
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\bin\Debug\netcoreapp1.1\collections_practice.dll
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\bin\Debug\netcoreapp1.1\collections_practice.pdb
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\obj\Debug\netcoreapp1.1\collections_practice.dll
+C:\Users\Evan\Desktop\DojoAssignments\netCore\collections_practice\obj\Debug\netcoreapp1.1\collections_practice.pdb

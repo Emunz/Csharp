@@ -1,0 +1,8 @@
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\bin\Debug\netcoreapp1.1\human_oop.deps.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\bin\Debug\netcoreapp1.1\human_oop.runtimeconfig.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\bin\Debug\netcoreapp1.1\human_oop.runtimeconfig.dev.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\bin\Debug\netcoreapp1.1\human_oop.dll
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\bin\Debug\netcoreapp1.1\human_oop.pdb
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\obj\Debug\netcoreapp1.1\human_oop.AssemblyInfo.cs
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\obj\Debug\netcoreapp1.1\human_oop.dll
+C:\Users\Evan\Desktop\DojoAssignments\netCore\human_oop\obj\Debug\netcoreapp1.1\human_oop.pdb

@@ -1,0 +1,8 @@
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\bin\Debug\netcoreapp1.1\firstASP.deps.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\bin\Debug\netcoreapp1.1\firstASP.runtimeconfig.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\bin\Debug\netcoreapp1.1\firstASP.runtimeconfig.dev.json
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\bin\Debug\netcoreapp1.1\firstASP.dll
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\bin\Debug\netcoreapp1.1\firstASP.pdb
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\obj\Debug\netcoreapp1.1\firstASP.AssemblyInfo.cs
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\obj\Debug\netcoreapp1.1\firstASP.dll
+C:\Users\Evan\Desktop\DojoAssignments\netCore\firstASP\obj\Debug\netcoreapp1.1\firstASP.pdb

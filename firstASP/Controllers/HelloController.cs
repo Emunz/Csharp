@@ -8,6 +8,13 @@ namespace YourNamespace.Controllers
         [HttpGetAttribute]
 
         [HttpGet]
+        [Route("")]
+        public IActionResult Homepage()
+        {
+            return View("Homepage");
+        }
+
+        [HttpGet]
         [Route("{First}/{Last}/{Age}/{Color}")]
         public JsonResult Index(string First, string Last, int Age, string Color)
         {

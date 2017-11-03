@@ -9554,16 +9554,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\TimeDisplay\\TimeDisplay.csproj",
-      "projectName": "TimeDisplay",
-      "projectPath": "C:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\TimeDisplay\\TimeDisplay.csproj",
-      "outputPath": "C:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\TimeDisplay\\obj\\",
+      "projectUniqueName": "c:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\PortfolioProject\\PortfolioProject.csproj",
+      "projectName": "PortfolioProject",
+      "projectPath": "c:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\PortfolioProject\\PortfolioProject.csproj",
+      "outputPath": "c:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\PortfolioProject\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/TimeDisplay.dll": "C:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\TimeDisplay\\bin\\placeholder\\netcoreapp1.1\\TimeDisplay.dll"
+        "lib/netcoreapp1.1/PortfolioProject.dll": "c:\\Users\\Evan\\Desktop\\DojoAssignments\\netCore\\PortfolioProject\\bin\\placeholder\\netcoreapp1.1\\PortfolioProject.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

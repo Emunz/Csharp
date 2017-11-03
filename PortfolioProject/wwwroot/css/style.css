@@ -1,0 +1,105 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: blanchedalmond;
+    width: 1100px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid maroon;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: maroon;
+}
+
+.header h1 {
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 56px;
+    font-weight: 200;
+}
+
+.navbar {
+    display: block;
+    width: 500px;
+    margin: 5px auto;
+    /* background-color: brown; */
+}
+
+.header a {
+    text-decoration: none;
+    color: blanchedalmond;
+    margin-left: 45px;
+    border: 1px blanchedalmond solid;
+    padding: 3px 10px;
+
+}
+
+.title {
+    text-align: center;
+    color: rgb(119, 4, 4);
+    margin-top: 70px;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    border: 5px double rgb(119, 4, 4);
+}
+
+h3 {
+    text-align: center;
+    color: rgb(119, 4, 4);
+    margin-top: 50px;    
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(119, 4, 4);
+}
+
+form {
+    display: block;
+    width: 180px;
+    margin: 10px auto;
+    border: 5px solid maroon;
+    padding: 20px 60px;
+}
+
+input, textarea {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    width: 180px;
+    box-shadow: inset 2px 2px 2px grey;
+}
+
+input {
+    height: 20px;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: 20px auto;
+    background-color: maroon;
+    color: blanchedalmond;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+}
+

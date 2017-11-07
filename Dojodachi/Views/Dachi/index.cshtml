@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/css/style.css"/>
+    <title>Dojodachi</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dojodachi</h1>
+        <h3>@ViewBag.Message</h3>
+        
+        <img src="~/images/dachi.gif">
+        <p>Happiness: @ViewBag.Happiness</p>
+        <p>Fullness: @ViewBag.Fullness</p>
+        <p>Energy @ViewBag.Energy</p>
+        <p>Meals: @ViewBag.Meals</p>
+        @if(ViewBag.Restart == "No"){
+            <form action="feed" class="form">
+            <input type="submit" value="Feed" class="btn">
+            </form>
+            <form action="play" class="form">
+                <input type="submit" value="Play" class="btn">
+            </form>
+            <form action="sleep" class="form">
+                <input type="submit" value="Sleep" class="btn">
+            </form>
+            <form action="work" class="form">
+                <input type="submit" value="Work" class="btn">
+            </form> 
+        }
+        @if(ViewBag.Restart == "Yes"){
+            <form action="restart">
+                <input type="submit" value="Restart?" class="center btn">
+            </form> 
+        }
+        
+    </div>
+    
+
+
+</body>
+</html>

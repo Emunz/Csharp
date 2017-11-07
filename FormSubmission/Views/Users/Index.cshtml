@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Enter Your Information</h1>
+<form action="register" method="POST">
+    First Name: <input type="text" name="FirstName">
+    Last Name: <input type="text" name="LastName">
+    Age: <input type="number" name="Age">
+    Email: <input type="email" name="Email">
+    Password: <input type="password" name="Password">
+    <input type="submit" value="Submit">
+</form>
+<div>
+    @foreach(var field in ViewBag.ModelFields)
+        {
+            <ul>
+                if (field.Errors.Count > 0)
+                {
+                    <li>@field.Errors[0].ErrorMessage</li>
+                }
+            </ul>
+        }
+    }
+</div>

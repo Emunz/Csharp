@@ -18,7 +18,7 @@ namespace FormSubmission.Models
         public string Email { get; set; }
 
         [Required]
-        [Range(0, 120)]
+        [Range(-1, 120)]
         public int Age{ get; set; }
 
  

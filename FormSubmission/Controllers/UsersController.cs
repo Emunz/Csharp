@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using FormSubmission.Models;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 namespace FormSubmission.Controllers
 {
@@ -39,9 +40,9 @@ namespace FormSubmission.Controllers
             
             if(TryValidateModel(NewUser) == false){
                 ViewBag.ModelFields = ModelState.Values;
-                return View("Index");
+                return View("register");
             } else {
-                return RedirectToAction("Success");
+                return View("Success");
             }
         }
     }

@@ -1,0 +1,15 @@
+/*Write all of your CSS here*/
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    margin: 120px;
+}
+
+input {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}

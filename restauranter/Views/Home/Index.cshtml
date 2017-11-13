@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using restauranter.Models;
+@model restauranter.Models.Review
+
+
+<h1>Write a new Review:</h1>
+<form asp-controller="Home" asp-action="Create" method="POST">
+    <span asp-validation-for="reviewer_name"></span>
+    <label asp-for="reviewer_name">Reviewer Name:</label>
+    <input type="text" name="reviewer_name">
+    <span asp-validation-for="restaurant_name"></span>
+    <label asp-for="restaurant_name">Restaurant Name:</label>
+    <input type="text" asp-for="restaurant_name">
+    <span asp-validation-for="review"></span>
+    <label asp-for="review">Review:</label>
+    <textarea col="50" rows="10" asp-for="review"></textarea>
+    <span asp-validation-for="date"></span>
+    @{
+        <p>@ViewBag.Error</p>
+    }
+    
+    <label asp-for="date">Date of Visit:</label>
+    <input type="date" asp-for="date">
+    <span asp-validation-for="stars"></span>
+    <label asp-for="stars">Stars:</label>
+    <select asp-for="stars" >
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
+
+    

@@ -1,0 +1,5 @@
+/*Write all of your CSS here*/
+
+input, textarea, select {
+    display: block;
+}

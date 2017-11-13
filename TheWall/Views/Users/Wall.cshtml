@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Success";
+}
+@model LoginRegistration.Models.User
+
+
+<h1>Welcome, @ViewBag.UserName!  This is The Wall!</h1>
+
+<div asp-validation-summery="All"></div>
+<form asp-controller="Messages" asp-action="CreateMessage" method="post">
+    <span asp-validation-for="UserMessage"></span>
+    <label asp-for="UserMessage">Post a Message!</label>
+    <textarea asp-for="UserMessage" name="UserMessage" col="30" rows="10"></textarea>
+    <input type="submit" value="Post!">
+</form>
+
+
+<div>
+    <form asp-controller="Comments" asp-action="CreateComment" method="post">
+        <span asp-validation-for="UserComment"></span>
+        <label asp-for="UserComment">Post a Message!</label>
+        <textarea asp-for="UserComment" name="UserComment" col="30" rows="10"></textarea>
+        <input type="submit" value="Post!">
+    </form>
+</div>

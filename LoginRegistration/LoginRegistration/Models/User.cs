@@ -7,12 +7,12 @@ namespace LoginRegistration.Models
     {
         [Required]
         [MinLength(2)]
-        [Display(Name = "FirstName")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         [Required]
         [MinLength(2)]
-        [Display(Name = "LastName")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
  
         [Required]
@@ -30,7 +30,7 @@ namespace LoginRegistration.Models
         [MinLength(8)]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage="Make sure your passwords are matching!")]
-        [Display(Name = "ConfirmPassword")]
+        [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
     }
 }

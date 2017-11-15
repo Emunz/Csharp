@@ -1,0 +1,55 @@
+@using WeddingPlanner.Models;
+@using System.Linq;
+@using System;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Welcome to the Wedding Planner</h1>
+<table>
+    <thead>
+        <th>Wedding</th>
+        <th>Host</th>
+        <th>Date</th>
+        <th>Guests</th>
+        <th>Action</th>
+    </thead>
+    @{
+        if(@ViewBag.AllWeddings != null)
+        {
+            foreach(Wedding wedding in @ViewBag.AllWeddings)
+            {
+                <tr>
+                    <td><a href="/wedding/@wedding.WeddingId">@wedding.WedderOne and @wedding.WedderTwo</a></td>
+                    <td>@wedding.Host.FirstName</td>
+                    <td>@wedding.Date.ToString("MM/dd/yyyy")</td>
+                    <td>@wedding.Guests.Count</td>
+                    @if(@wedding.HostId == @ViewBag.UserId)
+                    {
+                        
+                        <td><a href="/deletewedding/@wedding.WeddingId">Delete Wedding</a></td>
+                    }
+                    else
+                    {
+                        @if(@wedding.Guests.Any(u => u.WeddingGuestId == @ViewBag.UserId))
+                        {
+                            <td><a href="/unattendwedding/@wedding.WeddingId">UN-RSVP</a></td>
+                        }
+                        else
+                        {
+                            <td><a href="/attendwedding/@wedding.WeddingId">RSVP</a></td>
+                        }
+                    }
+                </tr>     
+                
+            } 
+        }
+    }
+</table>
+
+
+
+<button><a href="/addwedding">New Wedding</a></button>
+

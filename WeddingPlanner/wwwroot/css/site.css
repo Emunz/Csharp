@@ -1,0 +1,58 @@
+/*Write all of your CSS here*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px;
+}
+
+input {
+    display: block; 
+}
+
+.errors {
+    color: red;
+    display: inline-block;
+}
+
+.navbar p {
+    display: inline-block
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar p, .navbar a {
+    margin: 30px;
+    color: blanchedalmond;
+    font-size: 32px;
+}
+
+.navbar {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100px;
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(7, 87, 87);
+    padding: 20px;
+}

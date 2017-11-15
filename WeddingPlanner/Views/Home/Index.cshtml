@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model WeddingPlanner.Models.RegisterViewModel
+<div class="wrapper">
+    <div class="container">
+        <div class="inline">
+            <h1>Register</h1>
+            <form asp-controller="Home" asp-action="Register" method="POST">
+                <span asp-validation-for="FirstName"></span>
+                <label asp-for="FirstName">First Name:</label>
+                <input type="text" asp-for="FirstName" name="FirstName"/>
+
+                <span asp-validation-for="LastName"></span>
+                <label asp-for="LastName">Last Name:</label>
+                <input type="text" asp-for="LastName" name="LastName"/>
+
+                <span asp-validation-for="Email"></span>
+                <label asp-for="Email">Email:</label>
+                <input type="email" asp-for="Email" name="Email"/>
+
+                <span asp-validation-for="Password"></span>
+                <label asp-for="Password">Password:</label>
+                <input type="password" asp-for="Password" name="Password"/>
+
+                <span asp-validation-for="ConfirmPassword"></span>
+                <label asp-for="ConfirmPassword"></label>
+                <input type="password" asp-for="ConfirmPassword" name="ConfirmPassword"/>
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+        <div class="inline">
+            <h1>Login</h1>
+            <form asp-controller="Home" asp-action="Login" method="POST">
+                <label asp-for="Email">Email:</label>
+                <input type="email" asp-for="Email" name="Email"/>
+
+                <label asp-for="Password">Password:</label>
+                <input type="password" asp-for="Password" name="Password"/>
+
+                <input type="submit" value="Login">
+            </form>
+            <div class="errors">
+                @{
+                    if(ViewBag.Error != null)
+                    {
+                        <p>@ViewBag.Error</p>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

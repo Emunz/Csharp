@@ -1,0 +1,12 @@
+@using BeltExam.Models;
+@using System.Linq;
+@using System;
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="container center">
+    <h1>@ViewBag.User.FirstName @ViewBag.User.LastName 's Profile</h1>
+    <p>@ViewBag.User.FirstName 's Bio: @ViewBag.User.Description</p>
+</div>

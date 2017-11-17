@@ -1,0 +1,52 @@
+@using BeltExam.Models;
+@using System.Linq;
+@using System;
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container">
+    @if(TempData["InviteSent"] != null)
+    {
+        <h3>@TempData["InviteSent"]</h3>
+    }
+
+    <div class="twelve columns center">
+        <h1>Welcome to the Professional Network</h1>
+        <h4>Users you may want to connect with:</h4>
+        <table class="twelve columns">
+            <thead>
+                <th>Name</th>
+                <th>Action</th>
+            </thead>
+
+            @foreach(User person in @ViewBag.AllUsers)
+            {
+                if(@ViewBag.)
+                <tr>
+                    <td><a href="/user/@person.UserId">@person.FirstName @person.LastName</a></td>
+                    <td><a href="/createconnection/@person.UserId">Connect</a></td>
+                </tr>  
+            }
+            
+        </table>
+        
+        <h4>All Users you are friends with:</h4>
+        <table class="twelve columns">
+            <thead>
+                <th>Name</th>
+            </thead>
+
+            @foreach(Connection person in @ViewBag.Friends)
+            {
+                <tr>
+                    <td><a href="/user/@person.Sender.UserId">@person.Sender.FirstName @person.Sender.LastName</a></td>
+                </tr>  
+            }
+            
+        </table>
+    </div>
+</div>
+
+

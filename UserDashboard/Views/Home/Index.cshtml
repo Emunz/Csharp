@@ -1,8 +1,24 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-@model BeltExam.Models.RegisterViewModel
+@model UserDashboard.Models.RegisterViewModel
 <div class="container">
+    <div class="center grey">
+        <h1 class="twelve columns">Welcome to the User Dashboard!</h1>
+        <p>We're going to build a cool application using a MVC framework! This appliation was built with the Village88 folks!</p>
+    </div>
+    <div class="inline three columns">
+        <h4>Manage Users</h4>
+        <p>Using the application, you'll lean how to add, remove and edit users for the application</p>
+    </div>
+    <div class="inline four columns">
+        <h4>Leave Messages</h4>
+        <p>Users will be able to leave a message to another user using the application</p>
+    </div>
+    <div class="inline four columns">
+        <h4>Edit User Information</h4>
+        <p>Admins will be able to edit another user's information (email address, first name, last name, etc)</p>
+    </div>
     <div>
         <div class="inline four offset-by-two columns">
             <h1>Register</h1>
@@ -26,10 +42,6 @@
                 <span asp-validation-for="ConfirmPassword"></span>
                 <label asp-for="ConfirmPassword"></label>
                 <input type="password" asp-for="ConfirmPassword" name="ConfirmPassword"/>
-
-                <span asp-validation-for="Description"></span>
-                <label asp-for="Description">Description:</label>
-                <textarea asp-for="Description" name="Description"></textarea>
 
                 <input type="submit" value="Register">
             </form>

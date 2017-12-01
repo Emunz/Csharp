@@ -3,12 +3,12 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using BeltExam.Models;
+using UserDashboard.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 
-namespace BeltExam
+namespace UserDashboard
 {
     public class Startup
 
@@ -27,7 +27,7 @@ namespace BeltExam
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<BeltContext>(options => options.UseNpgsql(Configuration["DBInfo:ConnectionString"]));
+            services.AddDbContext<DashboardContext>(options => options.UseNpgsql(Configuration["DBInfo:ConnectionString"]));
             services.AddMvc();
             services.AddSession();
         }

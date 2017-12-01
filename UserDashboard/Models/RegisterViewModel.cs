@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace BeltExam.Models
+namespace UserDashboard.Models
 {
     public class RegisterViewModel : BaseEntity
     {
@@ -24,9 +24,5 @@ namespace BeltExam.Models
  
         [Compare("Password", ErrorMessage = "Password and confirmation must match")]
         public string ConfirmPassword { get; set; }
-
-        [Required(ErrorMessage = "Description is required")]
-        [MinLength(10, ErrorMessage = "Your description must be at least 10 characters")]
-        public string Description { get; set; }
     }
 }

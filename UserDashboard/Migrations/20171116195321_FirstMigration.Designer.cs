@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using BeltExam.Models;
+using UserDashboard.Models;
 
 namespace BeltExam.Migrations
 {
-    [DbContext(typeof(BeltContext))]
-    [Migration("20171117175756_FirstMigration")]
+    [DbContext(typeof(DashboardContext))]
+    [Migration("20171116195321_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -17,32 +17,12 @@ namespace BeltExam.Migrations
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
                 .HasAnnotation("ProductVersion", "1.1.2");
 
-            modelBuilder.Entity("BeltExam.Models.Connection", b =>
-                {
-                    b.Property<int>("ConnectionId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("ConnectionStatus");
-
-                    b.Property<int>("ReceiverId");
-
-                    b.Property<int>("SenderId");
-
-                    b.HasKey("ConnectionId");
-
-                    b.HasIndex("SenderId");
-
-                    b.ToTable("Connections");
-                });
-
-            modelBuilder.Entity("BeltExam.Models.User", b =>
+            modelBuilder.Entity("UserDashboard.Models.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("CreatedAt");
-
-                    b.Property<string>("Description");
 
                     b.Property<string>("Email");
 
@@ -57,14 +37,6 @@ namespace BeltExam.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("BeltExam.Models.Connection", b =>
-                {
-                    b.HasOne("BeltExam.Models.User", "Sender")
-                        .WithMany("Connections")
-                        .HasForeignKey("SenderId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

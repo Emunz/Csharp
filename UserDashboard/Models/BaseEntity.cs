@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace BeltExam
+namespace UserDashboard
 {
     public abstract class BaseEntity
     {
